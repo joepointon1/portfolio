@@ -1,0 +1,50 @@
+@import "../../global.scss";
+.intro{
+    background-color: lightpink;
+
+    .container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height:100%
+    }
+    
+    .right{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h1{
+            font-size: 4em;
+            color: white;
+        }
+
+        h2{
+            color: black;
+            font-size: 2em;
+        }
+    }
+
+    .left{
+        flex:1;
+        display: flex;
+        align-items: flex-end;
+        
+    }
+    .imgContainer{
+        height: calc(100vh - 70px);
+        width:50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    img{
+        height:75%;
+        border-radius: 50%;
+        margin:auto;
+        aspect-ratio:1/1;
+    }
+}

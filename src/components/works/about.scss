@@ -1,0 +1,121 @@
+@import "../../global.scss";
+
+.works {
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+ 
+
+  h1{
+    font-size: 4em;
+  }
+  .arrow {
+    font-size: 50px;
+    position: absolute;
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+    &.left {
+      left: 8vw;
+    }
+    &.right {
+      right: 8vw;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          width: 80%;
+          height: 150px;
+          margin: 20px 0;
+        }
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @include mobile {
+              width: 100%;
+              height: 100%;
+            }
+
+            .imgContainer {
+              width: 50px;
+              height: 50px;
+              background-color: rgb(243, 159, 129);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+
+             
+            }
+            h2 {
+              font-size: 3em;
+              @include mobile{
+                height: 13x;
+              }
+            }
+            p {
+              font-size: 1em;
+              @include mobile{
+                display: none;
+              }
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+                    
+        }
+      }
+    }
+  }
+}
+

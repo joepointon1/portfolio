@@ -1,0 +1,32 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height:100%;
+  width: 100%;
+  .arrow {
+    font-size: 50px;
+    cursor: pointer;
+  }
+
+  img {
+    transition: all 1s ease;
+    
+    height: 300px;
+    width: auto;
+    &.active {
+      margin: 0 0.5vw;
+    }
+    &.hidden {
+        height: 0px;
+        width: 0px;
+        opacity: 0;
+    }
+    &.small{
+        height: 40px;
+        width: 20px;
+        margin:1px;
+        opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+$mainColor:#00008b;
+$fadeColor:#00008b81;
+
+$width: 768px;
+
+@mixin mobile{
+    @media (max-width: #{$width}){
+        @content
+    }
+}
